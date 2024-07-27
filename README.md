@@ -9,3 +9,5 @@ El proyecto se adapta a las siguientes resoluciones:
 3.- 630px
 
 En este proyecto se utiliza el conocimiento adquirido de HTML y CSS que se ha ido perfeccionando a través de proyectos anteriores, añadiendo una nueva habilidad: JavaScript. Con JavaScript, se le agregó interactividad a la página. En esta primera parte, se empleó la interactividad en el botón de editar el perfil, donde los usuarios podrán cambiar el nombre y la ocupación.
+
+https://dcvsesh.github.io/web_project_around/
