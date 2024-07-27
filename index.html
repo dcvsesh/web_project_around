@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Susana Sanchez" />
+    <meta
+      name="keywords"
+      content="TripleTen, alrededor, mundo, viaje, US, fotografías"
+    />
+    <meta
+      name="description"
+      content="Se podran observar fotografías alrededor de los EE.UU. y conocer los estamos más importantes para guardar y explorar."
+    />
+    <title>Alrededor de los EE.UU.</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+  </head>
+  <body>
+    <div class="page">
+      <section class="popup">
+        <div class="popup__container">
+          <form class="popup__form form">
+            <button class="popup__button-close" type="button">
+              <img
+                class="popup__button-close-image"
+                src="./images/close_icon.svg"
+                alt="Cruz para cerrar"
+              />
+            </button>
+            <fieldset class="popup__form-fieldset">
+              <h3 class="popup__form-fieldset_name">Editar perfil</h3>
+              <input
+                class="input__text input__text_name"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Nombre"
+              />
+              <input
+                class="input__text input__text_about"
+                type="text"
+                name="about"
+                id="about"
+                placeholder="Acerca de mí"
+              />
+              <button class="popup__form-button" type="submit">Guardar</button>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+
+      <header class="header">
+        <img
+          src="./images/logo_header.svg"
+          alt="Logo Around the US"
+          class="header__logo"
+        />
+        <hr class="line" />
+      </header>
+
+      <main class="content">
+        <section class="profile">
+          <div class="profile__column">
+            <img
+              src="./images/avatar.jpg"
+              alt="Avatar"
+              class="profile__avatar"
+            />
+            <div class="profile__info">
+              <h2 class="profile__info_title">Jacques Cousteau</h2>
+              <button class="profile__edit-button" type="button">
+                <img
+                  src="./images/edit_button.png"
+                  alt="Botón para editar"
+                  class="profile__edit-button-image"
+                />
+              </button>
+              <p class="profile__info_subtitle">Explorador</p>
+            </div>
+          </div>
+          <button class="profile__add-button" type="button">
+            <img
+              src="./images/add.svg"
+              alt="Botón para añadir"
+              class="profile__add-button-image"
+            />
+          </button>
+        </section>
+
+        <section class="cards">
+          <ul class="cards__content">
+            <li class="cards__item">
+              <img
+                src="images/image_1.jpg"
+                alt="Imagen de Valle de Yosemite"
+                class="cards__image"
+              />
+              <div class="cards__image-info">
+                <h3 class="cards__image-text">Valle de Yosemite</h3>
+                <button class="cards__hearth-button"></button>
+              </div>
+            </li>
+
+            <li class="cards__item">
+              <img
+                src="images/image_2.png"
+                alt="Imagen de Lago Louise"
+                class="cards__image"
+              />
+              <div class="cards__image-info">
+                <h3 class="cards__image-text">Lago Louise</h3>
+                <button class="cards__hearth-button"></button>
+              </div>
+            </li>
+
+            <li class="cards__item">
+              <img
+                src="images/image_3.png"
+                alt="Imagen de Montañas Calvas"
+                class="cards__image"
+              />
+              <div class="cards__image-info">
+                <h3 class="cards__image-text">Montañas Calvas</h3>
+                <button class="cards__hearth-button"></button>
+              </div>
+            </li>
+
+            <li class="cards__item">
+              <img
+                src="images/image_4.png"
+                alt="Imagen de Latemar"
+                class="cards__image"
+              />
+              <div class="cards__image-info">
+                <h3 class="cards__image-text">Latemar</h3>
+                <button class="cards__hearth-button"></button>
+              </div>
+            </li>
+
+            <li class="cards__item">
+              <img
+                src="images/image_5.png"
+                alt="Imagen de Vanois National..."
+                class="cards__image"
+              />
+              <div class="cards__image-info">
+                <h3 class="cards__image-text">Vanois National...</h3>
+                <button class="cards__hearth-button"></button>
+              </div>
+            </li>
+
+            <li class="cards__item">
+              <img
+                src="images/image_6.png"
+                alt="Imagen de Lago di Braies"
+                class="cards__image"
+              />
+              <div class="cards__image-info">
+                <h3 class="cards__image-text">Lago di Braies</h3>
+                <button class="cards__hearth-button"></button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="footer__copyright">&copy; 2024 Around The U.S.</p>
+      </footer>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>
