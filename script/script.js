@@ -1,10 +1,10 @@
 // Busquemos el formulario en el DOM
-let container = document.querySelector(".page");
-let formElement = document.querySelector(".form");
-let popupButton = document.querySelector(".profile__edit-button");
-let popup = document.querySelector(".popup");
-let popupClose = document.querySelector(".popup__button-close");
-let popupSave = document.querySelector(".popup__form-button");
+const container = document.querySelector(".page");
+const formElement = document.querySelector(".form");
+const popupButton = document.querySelector(".profile__edit-button");
+const popup = document.querySelector(".popup");
+const popupClose = document.querySelector(".popup__button-close");
+const popupSave = document.querySelector(".popup__form-button");
 
 function openPopup() {
   popup.classList.add("popup_opened");
@@ -17,10 +17,10 @@ function closePopup() {
 }
 popupClose.addEventListener("click", closePopup);
 
-let nameInput = document.querySelector(".input__text_name");
-let jobInput = document.querySelector(".input__text_about");
-let profileName = document.querySelector(".profile__info_title");
-let profileJob = document.querySelector(".profile__info_subtitle");
+const nameInput = document.querySelector(".input__text_name");
+const jobInput = document.querySelector(".input__text_about");
+const profileName = document.querySelector(".profile__info_title");
+const profileJob = document.querySelector(".profile__info_subtitle");
 
 nameInput.value = profileName.textContent;
 jobInput.value = profileJob.textContent;
@@ -28,8 +28,8 @@ jobInput.value = profileJob.textContent;
 function handleProfileFormSubmit(evt) {
   evt.preventDefault();
 
-  let nameValue = nameInput.value;
-  let jobValue = jobInput.value;
+  const nameValue = nameInput.value;
+  const jobValue = jobInput.value;
 
   profileName.textContent = nameValue;
   profileJob.textContent = jobValue;
