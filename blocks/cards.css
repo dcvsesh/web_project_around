@@ -4,9 +4,8 @@
 }
 .cards__content {
   display: flex;
-  background-color: black;
+  column-gap: 17px;
   width: 880px;
-  justify-content: space-between;
   flex-direction: row;
   padding: 0;
   flex-wrap: wrap;
@@ -17,9 +16,11 @@
 .cards__item {
   display: flex;
   flex-direction: column;
+  width: 282px;
 }
 
 .cards__image {
+  height: 282px;
   width: 282px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
@@ -36,15 +37,15 @@
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   align-items: center;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .cards__image-text {
   font-family: "Inter-black";
   font-size: 24px;
   margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .cards__hearth-button {
@@ -55,8 +56,29 @@
   background-color: transparent;
   background-repeat: no-repeat;
   height: 19px;
+  margin-left: 3px;
 }
 .cards__hearth-button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.cards__hearth-button_active {
+  opacity: 1;
+  background-image: url(../images/like_activo.svg);
+}
+
+.cards__trash-button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  margin-top: 15px;
+  width: 18px;
+  align-self: flex-end;
+  margin-right: 15px;
+}
+
+.cards__trash-button:hover {
   cursor: pointer;
   opacity: 0.5;
 }

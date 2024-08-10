@@ -20,7 +20,7 @@
     <div class="page">
       <section class="popup">
         <div class="popup__container">
-          <form class="popup__form form">
+          <form class="form popup__form">
             <button class="popup__button-close" type="button">
               <img
                 class="popup__button-close-image"
@@ -35,6 +35,7 @@
                 type="text"
                 name="name"
                 id="name"
+                value="Jacques Cousteau"
                 placeholder="Nombre"
               />
               <input
@@ -42,11 +43,60 @@
                 type="text"
                 name="about"
                 id="about"
+                value="Explorador"
                 placeholder="Acerca de mí"
               />
               <button class="popup__form-button" type="submit">Guardar</button>
             </fieldset>
           </form>
+        </div>
+      </section>
+
+      <section class="popup__add">
+        <div class="popup__add__container">
+          <form class="popup__add__form">
+            <button class="popup__add__button-close" type="button">
+              <img
+                class="popup__button-close-image"
+                src="./images/close_icon.svg"
+                alt="Cruz para cerrar"
+              />
+            </button>
+            <fieldset class="popup__add__form-fieldset">
+              <h3 class="popup__add__form-fieldset_name">Nuevo lugar</h3>
+              <input
+                class="input__text input__text_place"
+                type="text"
+                name="place"
+                id="place"
+                placeholder="Título"
+              />
+              <input
+                class="input__text input__text_link"
+                type="text"
+                name="link"
+                id="link"
+                placeholder="Enlace a la imagen"
+              />
+              <button class="popup__add__form-button" type="submit">
+                Crear
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+
+      <section class="popup__image">
+        <div class="popup__image__container">
+          <button class="popup__image_button-close" type="button">
+            <img
+              class="popup__button-close-image"
+              src="./images/close_icon.svg"
+              alt="Cruz para cerrar"
+            />
+          </button>
+          <img src="" alt="" class="popup__image_image" />
+          <p class="popup__image_name"></p>
         </div>
       </section>
 
@@ -89,80 +139,25 @@
         </section>
 
         <section class="cards">
-          <ul class="cards__content">
-            <li class="cards__item">
-              <img
-                src="images/image_1.jpg"
-                alt="Imagen de Valle de Yosemite"
-                class="cards__image"
-              />
-              <div class="cards__image-info">
-                <h3 class="cards__image-text">Valle de Yosemite</h3>
-                <button class="cards__hearth-button"></button>
-              </div>
-            </li>
-
-            <li class="cards__item">
-              <img
-                src="images/image_2.png"
-                alt="Imagen de Lago Louise"
-                class="cards__image"
-              />
-              <div class="cards__image-info">
-                <h3 class="cards__image-text">Lago Louise</h3>
-                <button class="cards__hearth-button"></button>
-              </div>
-            </li>
-
-            <li class="cards__item">
-              <img
-                src="images/image_3.png"
-                alt="Imagen de Montañas Calvas"
-                class="cards__image"
-              />
-              <div class="cards__image-info">
-                <h3 class="cards__image-text">Montañas Calvas</h3>
-                <button class="cards__hearth-button"></button>
-              </div>
-            </li>
-
-            <li class="cards__item">
-              <img
-                src="images/image_4.png"
-                alt="Imagen de Latemar"
-                class="cards__image"
-              />
-              <div class="cards__image-info">
-                <h3 class="cards__image-text">Latemar</h3>
-                <button class="cards__hearth-button"></button>
-              </div>
-            </li>
-
-            <li class="cards__item">
-              <img
-                src="images/image_5.png"
-                alt="Imagen de Vanois National..."
-                class="cards__image"
-              />
-              <div class="cards__image-info">
-                <h3 class="cards__image-text">Vanois National...</h3>
-                <button class="cards__hearth-button"></button>
-              </div>
-            </li>
-
-            <li class="cards__item">
-              <img
-                src="images/image_6.png"
-                alt="Imagen de Lago di Braies"
-                class="cards__image"
-              />
-              <div class="cards__image-info">
-                <h3 class="cards__image-text">Lago di Braies</h3>
-                <button class="cards__hearth-button"></button>
-              </div>
-            </li>
-          </ul>
+          <ul class="cards__content"></ul>
         </section>
+
+        <template class="cards__template">
+          <li class="cards__item">
+            <img src=" " alt="" class="cards__image" />
+            <button class="cards__trash-button">
+              <img
+                src="./images/trash_icon.svg"
+                alt="trash picture"
+                class="cards__trash-button-image"
+              />
+            </button>
+            <div class="cards__image-info">
+              <h3 class="cards__image-text"></h3>
+              <button class="cards__hearth-button"></button>
+            </div>
+          </li>
+        </template>
       </main>
       <footer class="footer">
         <p class="footer__copyright">&copy; 2024 Around The U.S.</p>
