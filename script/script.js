@@ -75,7 +75,7 @@ function createCard(name, link) {
   const cardImage = card.querySelector(".cards__image");
   const cardName = card.querySelector(".cards__image-text");
   cardImage.src = link;
-  cardImage.alt = "imagen de ${name}";
+  cardImage.alt = `imagen de ${name}`;
   cardName.textContent = name;
   //Like a las tarjetas
   card
