@@ -1,6 +1,8 @@
 //DOM
 const container = document.querySelector(".page");
-const popupProfile = document.querySelector(".popup");
+const popup = document.querySelectorAll(".popup");
+const popupProfile = document.querySelector(".popup__profile");
+
 const popupButton = document.querySelector(".profile__edit-button");
 const popupClose = document.querySelector(".popup__button-close");
 const popupSave = document.querySelector(".popup__form-button");
@@ -129,3 +131,26 @@ popupImageClose.addEventListener("click", ClosePopupImage);
 initialCards.forEach(function (item) {
   createCard(item.name, item.link);
 });
+
+//Cerrar al hacer clic fuera
+function closePopups() {
+  popupProfile.classList.remove("popup_opened");
+  popupAdd.classList.remove("popup__add_opened");
+  popupImage.classList.remove("popup__image_opened");
+  document.addEventListener("keydown", escapeHandler);
+}
+
+popup.forEach((popupElement) => {
+  popupElement.addEventListener("click", (evt) => {
+    if (evt.target.matches(".popup")) {
+      closePopups();
+    }
+  });
+});
+
+//Cerrar con esc
+function escapeHandler(evt) {
+  if (evt.key === "Escape") {
+    closePopups();
+  }
+}

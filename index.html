@@ -18,9 +18,9 @@
   </head>
   <body>
     <div class="page">
-      <section class="popup">
+      <section class="popup popup__profile">
         <div class="popup__container">
-          <form class="form popup__form">
+          <form class="form popup__form" novalidate>
             <button class="popup__button-close" type="button">
               <img
                 class="popup__button-close-image"
@@ -28,33 +28,47 @@
                 alt="Cruz para cerrar"
               />
             </button>
-            <fieldset class="popup__form-fieldset">
+            <fieldset class="popup__form-fieldset form__set">
               <h3 class="popup__form-fieldset_name">Editar perfil</h3>
-              <input
-                class="input__text input__text_name"
-                type="text"
-                name="name"
-                id="name"
-                value="Jacques Cousteau"
-                placeholder="Nombre"
-              />
-              <input
-                class="input__text input__text_about"
-                type="text"
-                name="about"
-                id="about"
-                value="Explorador"
-                placeholder="Acerca de mí"
-              />
-              <button class="popup__form-button" type="submit">Guardar</button>
+              <label class="form__field">
+                <input
+                  class="input__text input__text_name"
+                  type="text"
+                  name="name"
+                  id="name-input"
+                  value="Jacques Cousteau"
+                  placeholder="Nombre"
+                  minlength="2"
+                  maxlength="40"
+                  required
+                />
+                <span class="form__input-error name-input-error"></span>
+              </label>
+              <label class="form__field">
+                <input
+                  class="input__text input__text_about"
+                  type="text"
+                  name="about"
+                  id="about-input"
+                  value="Explorador"
+                  placeholder="Acerca de mí"
+                  minlength="2"
+                  maxlength="200"
+                  required
+                />
+                <span class="form__input-error about-input-error"></span>
+              </label>
+              <button class="popup__form-button button_submit" type="submit">
+                Guardar
+              </button>
             </fieldset>
           </form>
         </div>
       </section>
 
-      <section class="popup__add">
+      <section class="popup popup__add">
         <div class="popup__add__container">
-          <form class="popup__add__form">
+          <form class="form popup__add__form" novalidate>
             <button class="popup__add__button-close" type="button">
               <img
                 class="popup__button-close-image"
@@ -62,23 +76,36 @@
                 alt="Cruz para cerrar"
               />
             </button>
-            <fieldset class="popup__add__form-fieldset">
+            <fieldset class="popup__add__form-fieldset form__set">
               <h3 class="popup__add__form-fieldset_name">Nuevo lugar</h3>
-              <input
-                class="input__text input__text_place"
-                type="text"
-                name="place"
-                id="place"
-                placeholder="Título"
-              />
-              <input
-                class="input__text input__text_link"
-                type="text"
-                name="link"
-                id="link"
-                placeholder="Enlace a la imagen"
-              />
-              <button class="popup__add__form-button" type="submit">
+              <label class="form__field">
+                <input
+                  class="input__text input__text_place"
+                  type="text"
+                  name="place"
+                  id="place-input"
+                  placeholder="Título"
+                  minlength="2"
+                  maxlength="30"
+                  required
+                />
+                <span class="form__input-error place-input-error"></span>
+              </label>
+              <label class="form__field">
+                <input
+                  class="input__text input__text_link"
+                  type="url"
+                  name="link"
+                  id="link-input"
+                  placeholder="Enlace a la imagen"
+                  required
+                />
+                <span class="form__input-error link-input-error"></span>
+              </label>
+              <button
+                class="popup__add__form-button button_submit"
+                type="submit"
+              >
                 Crear
               </button>
             </fieldset>
@@ -86,7 +113,7 @@
         </div>
       </section>
 
-      <section class="popup__image">
+      <section class="popup popup__image">
         <div class="popup__image__container">
           <button class="popup__image_button-close" type="button">
             <img
@@ -164,5 +191,6 @@
       </footer>
     </div>
     <script src="script/script.js"></script>
+    <script src="script/validate.js"></script>
   </body>
 </html>
