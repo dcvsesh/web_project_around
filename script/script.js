@@ -74,9 +74,10 @@ function createCard(name, link) {
   const card = cardTemplate.querySelector(".cards__item").cloneNode(true);
   const cardImage = card.querySelector(".cards__image");
   const cardName = card.querySelector(".cards__image-text");
-  cardImage.src = link;
-  cardImage.alt = `imagen de ${name}`;
   cardName.textContent = name;
+  cardImage.src = link;
+  cardImage.alt = `imagen de ${name} `;
+
   //Like a las tarjetas
   card
     .querySelector(".cards__hearth-button")
