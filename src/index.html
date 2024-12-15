@@ -21,10 +21,13 @@
       <section class="popup popup__profile">
         <div class="popup__container">
           <form class="form popup__form" novalidate>
-            <button class="popup__button-close" type="button">
+            <button
+              class="popup__button-close popup__button-close_profile"
+              type="button"
+            >
               <img
                 class="popup__button-close-image"
-                src="./images/close_icon.svg"
+                src="../images/close_icon.svg "
                 alt="Cruz para cerrar"
               />
             </button>
@@ -69,10 +72,13 @@
       <section class="popup popup__add">
         <div class="popup__add__container">
           <form class="form popup__add__form" novalidate>
-            <button class="popup__add__button-close" type="button">
+            <button
+              class="popup__add__button-close popup__button-close"
+              type="button"
+            >
               <img
                 class="popup__button-close-image"
-                src="./images/close_icon.svg"
+                src="../images/close_icon.svg"
                 alt="Cruz para cerrar"
               />
             </button>
@@ -115,10 +121,13 @@
 
       <section class="popup popup__image">
         <div class="popup__image__container">
-          <button class="popup__image_button-close" type="button">
+          <button
+            class="popup__button-close popup__image_button-close"
+            type="button"
+          >
             <img
               class="popup__button-close-image"
-              src="./images/close_icon.svg"
+              src="../images/close_icon.svg"
               alt="Cruz para cerrar"
             />
           </button>
@@ -129,7 +138,7 @@
 
       <header class="header">
         <img
-          src="./images/logo_header.svg"
+          src="../images/logo_header.svg"
           alt="Logo Around the US"
           class="header__logo"
         />
@@ -140,7 +149,7 @@
         <section class="profile">
           <div class="profile__column">
             <img
-              src="./images/avatar.jpg"
+              src="../images/avatar.jpg"
               alt="Avatar"
               class="profile__avatar"
             />
@@ -148,7 +157,7 @@
               <h2 class="profile__info_title">Jacques Cousteau</h2>
               <button class="profile__edit-button" type="button">
                 <img
-                  src="./images/edit_button.png"
+                  src="../images/edit_button.png"
                   alt="Botón para editar"
                   class="profile__edit-button-image"
                 />
@@ -158,7 +167,7 @@
           </div>
           <button class="profile__add-button" type="button">
             <img
-              src="./images/add.svg"
+              src="../images/add.svg"
               alt="Botón para añadir"
               class="profile__add-button-image"
             />
@@ -174,7 +183,7 @@
             <img src=" " alt="" class="cards__image" />
             <button class="cards__trash-button">
               <img
-                src="./images/trash_icon.svg"
+                src="../images/trash_icon.svg"
                 alt="trash picture"
                 class="cards__trash-button-image"
               />
@@ -190,9 +199,6 @@
         <p class="footer__copyright">&copy; 2024 Around The U.S.</p>
       </footer>
     </div>
-    <script type="module" src="./script/index.js"></script>
-    <script type="module" src="./script/Card.js"></script>
-    <script type="module" src="./script/FormValidator.js"></script>
-    <script type="module" src="./script/utils.js"></script>
+    <script type="module" src="./pages/index.js"></script>
   </body>
 </html>

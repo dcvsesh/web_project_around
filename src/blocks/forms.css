@@ -14,10 +14,11 @@
   background: transparent;
   border: none;
   position: relative;
-  left: 100%;
   padding: 0;
 }
-
+.popup__button-close_profile {
+  left: 100%;
+}
 .popup__button-close:hover {
   cursor: pointer;
   opacity: 0.7;
@@ -163,11 +164,12 @@
   .popup__form {
     position: fixed;
   }
-  .popup__button-close {
+  .popup__button-close_profile {
     left: 91%;
     margin-bottom: 14px;
     width: 26px;
   }
+
   .popup__button-close-image {
     width: 26px;
   }

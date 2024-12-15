@@ -50,7 +50,7 @@
 
 .cards__hearth-button {
   padding-right: 15px;
-  background-image: url(../images/like.svg);
+  background-image: url(../../images/like.svg);
   width: 21px;
   border: none;
   background-color: transparent;
@@ -65,7 +65,7 @@
 
 .cards__hearth-button_active {
   opacity: 1;
-  background-image: url(../images/like_activo.svg);
+  background-image: url(../../images/like_activo.svg);
 }
 
 .cards__trash-button {
