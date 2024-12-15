@@ -14,6 +14,8 @@ Web Project Around - SEGUNDA PARTE
 En esta segunda parte, se hizo un mayor uso de JavaScript, utilizando una plantilla de tarjetas que permite a los usuarios agregar su propia tarjeta personalizada, dar 'me gusta' a las tarjetas que prefieran y, al hacer clic en ellas, ver la imagen en tamaño completo.
 
 Web Project Around - TERCERA PARTE
-En la tercera parte, se implementó la validación de formularios para que los usuarios, al editar su perfil o agregar una tarjeta, puedan hacerlo de manera óptima, asegurándose de que la información ingresada es correcta. Se creó un archivo de JavaScript llamado 'validate' para agrupar todo el código relacionado con la validación de formularios.
+En la cuarta parte, se implementó el uso de clases con bajo acoplamiento, diseñadas para ser utilizadas en distintas instancias del proyecto, facilitando su reutilización y asegurando su escalabilidad a medida que el proyecto crezca.
+
+Web Project Around - CUARTA PARTE
 
 https://dcvsesh.github.io/web_project_around/
