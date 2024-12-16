@@ -24,6 +24,9 @@
   font-size: 42px;
   grid-area: title;
   margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .profile__info_subtitle {
