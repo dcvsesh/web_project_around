@@ -75,6 +75,39 @@
   color: white;
 }
 
+/*Confirmation*/
+.popup__confirmation {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  z-index: 3;
+  height: 100%;
+  position: fixed;
+  justify-content: center;
+}
+
+.popup__confirmation__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/*AVATAR*/
+.popup__avatar {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  z-index: 3;
+  height: 100%;
+  position: fixed;
+  justify-content: center;
+}
+.popup__avatar__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
 .popup_opened {
   display: flex;
 }

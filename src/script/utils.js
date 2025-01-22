@@ -11,3 +11,11 @@ export const popupImageContent = document.querySelector(".popup__image_image");
 export const popupImageText = document.querySelector(".popup__image_name");
 export const popupAdd = document.querySelector(".popup__add");
 export const popupAddButton = document.querySelector(".profile__add-button");
+export const popupConfirmation = document.querySelector(".popup__confirmation");
+export const profileAvatar = document.querySelector(".profile__avatar");
+export const popupProfileAvatar = document.querySelector(".popup__avatar");
+export const popupAvatarButton = document.querySelector(
+  ".profile__avatar-edit"
+);
+export const buttonSubmit = document.querySelector(".button_submit");
+export const trashButton = document.querySelector(".cards__trash-button");

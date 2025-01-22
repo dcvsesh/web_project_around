@@ -61,7 +61,10 @@
                 />
                 <span class="form__input-error about-input-error"></span>
               </label>
-              <button class="popup__form-button button_submit" type="submit">
+              <button
+                class="popup__form-button button_submit popup__save-button"
+                type="submit"
+              >
                 Guardar
               </button>
             </fieldset>
@@ -119,6 +122,34 @@
         </div>
       </section>
 
+      <section class="popup popup__confirmation">
+        <div class="popup__confirmation__container">
+          <form class="form popup__confirmation__form">
+            <button
+              class="popup__add__button-close popup__button-close"
+              type="button"
+            >
+              <img
+                class="popup__button-close-image"
+                src="../images/close_icon.svg"
+                alt="Cruz para cerrar"
+              />
+            </button>
+            <fieldset class="popup__confirmation__form-fieldset form__set">
+              <h3 class="popup__confirmation__form-fieldset_confirmation">
+                ¿Estás seguro?
+              </h3>
+              <button
+                class="popup__confirmation__form-button confirmation__button"
+                type="button"
+              >
+                Sí
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+
       <section class="popup popup__image">
         <div class="popup__image__container">
           <button
@@ -136,6 +167,45 @@
         </div>
       </section>
 
+      <section class="popup popup__avatar">
+        <div class="popup__avatar__container">
+          <form class="form popup__avatar__form" novalidate>
+            <button
+              class="popup__avatar__button-close popup__button-close"
+              type="button"
+            >
+              <img
+                class="popup__button-close-image"
+                src="../images/close_icon.svg"
+                alt="Cruz para cerrar"
+              />
+            </button>
+            <fieldset class="popup__avatar__form-fieldset form__set">
+              <h3 class="popup__avatar__form-fieldset_avatar">
+                Cambiar foto de perfil
+              </h3>
+              <label class="form__field">
+                <input
+                  class="input__text input__text_link"
+                  type="url"
+                  name="avatar"
+                  id="avatar-input"
+                  placeholder="Ingrese el nuevo enlace"
+                  required
+                />
+                <span class="form__input-error link-input-error"></span>
+              </label>
+              <button
+                class="popup__avatar__form-button button_submit popup__save-button"
+                type="submit"
+              >
+                Guardar
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+
       <header class="header">
         <img
           src="../images/logo_header.svg"
@@ -148,11 +218,13 @@
       <main class="content">
         <section class="profile">
           <div class="profile__column">
-            <img
-              src="../images/avatar.jpg"
-              alt="Avatar"
-              class="profile__avatar"
-            />
+            <div class="profile__avatar-edit">
+              <img
+                src="../images/avatar.jpg"
+                alt="Avatar"
+                class="profile__avatar"
+              />
+            </div>
             <div class="profile__info">
               <h2 class="profile__info_title">Jacques Cousteau</h2>
               <button class="profile__edit-button" type="button">
