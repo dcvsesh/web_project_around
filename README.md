@@ -17,5 +17,6 @@ Web Project Around - TERCERA PARTE
 En la cuarta parte, se implementó el uso de clases con bajo acoplamiento, diseñadas para ser utilizadas en distintas instancias del proyecto, facilitando su reutilización y asegurando su escalabilidad a medida que el proyecto crezca.
 
 Web Project Around - CUARTA PARTE
+Se implementó el uso de APIs, enviando solicitudes al servidor y recibiendo respuestas, mediante código asincrónico que guarda los cambios realizados.
 
 https://dcvsesh.github.io/web_project_around/

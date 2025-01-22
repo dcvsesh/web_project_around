@@ -82,7 +82,6 @@ api.getInitialCards().then((data) => {
   const cardList = new Section({
     items: data,
     renderer: (item) => {
-      console.log(item);
       const card = new Card(item.name, item.link, ".cards__template", {
         handleCardClick: () => {
           popupOfImage.open(item.name, item.link);
